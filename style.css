@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(176, 169, 180); 
+    font-family: inherit;
+  }
+  .color{
+  background: #33CCCC;
+  animation: color 9s infinite linear;
+  text-align: center;
+  padding: 2em;
+  }
+  h1 {
+    color: rgb(34, 32, 32); 
+    margin: 20px 0;
+  }
+  .progress {
+    background-color: white;
+    height: 20px;
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    right: 10px;
+  }
+  .progress--bar {
+    background-color: rgb(247, 4, 4);
+    height: 100%;
+    transition: all ease 0.5s; 
+  }
+  .questionArea,
+  .scoreArea {
+    display: none;
+  }
+  .questionArea {
+    max-width: 500px;
+    width: 100%;
+  }
+  .question {
+    color:brown;
+    font-size: 50px;
+    margin: 20px 0;
+  }
+  .option {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    background-color:rgb(92, 92, 242) ;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    color:rgb(26, 26, 22);
+    font-size: 30px;
+    cursor: pointer;
+  }
+  .option span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: rgb(4, 96, 4);
+    color: rgb(234, 132, 15);
+  }
+  .option:hover {
+    background-color: #fffb08;
+  }
+  .scoreArea {
+    background-color: lime;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 10px;
+    text-align: center;
+  }
+  .prizeImage {
+    width: auto;
+    height: 300px;
+    margin-bottom: 10px;
+  }
+  .scoreText1 {
+    color:brown ;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .scorePct {
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .scoreText2 {
+    font-size: 30px;
+    color: rgb(57, 7, 255);
+    margin-bottom: 10px;
+  }
+  .scoreArea button {
+    border: 0;
+    border-radius: 10px;
+    background-color:rgb(218, 37, 21) ;
+    color: rgb(247, 242, 247);
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  .scoreArea button:hover {
+    background-color:rgb(17, 17, 16) ; 
+  }
+  footer {
+    margin-top: 20px;
+    color: rgb(5, 5, 137);
+    font-size: 50px;
+  }
+  
+ @keyframes color {
+    0%   { background: #33CCCC; }
+    20%  { background: #33CC36; }
+    40%  { background: #B8CC33; }
+    60%  { background: #FCCA00; }
+    80%  { background: #33CC36; }
+    100% { background: #33CCCC; }
+ }
